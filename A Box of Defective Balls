@@ -1,0 +1,13 @@
+Question: You have 10 boxes of balls (each ball weighing exactly10 gm) with one box with defective balls 
+          (each one of the defective balls weigh 9 gm). 
+          You are given an electronic weighing machine and only one chance at it. How will find out which box has the defective balls?
+          
+Answer: For convenience sake, let’s name the boxes from 1 to 10. 
+        The number of balls you pick from each bag is equal to the box number. 
+        For example, pick 1 ball from box 1, 2 balls from box 2 and so on. In total you will have 55 balls. 
+        If all of the boxes have good balls, then the total weight of these balls would be 550gm.
+
+        If box 1 has defective balls, then the total weight should be 1gm less than expected (only one ball weighing 9 gm). 
+        If box 2 has defective balls, then the total weight should be 2gm less than expected (two balls weighing 9 gm). 
+        So once you weigh the set of chosen balls, find out the difference between the total weight and the expected weight. 
+        That number represents the box number which contains the defective balls.
