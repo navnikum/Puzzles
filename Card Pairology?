@@ -1,0 +1,38 @@
+
+Question: John and Matt decide to play a game using a deck of cards. The game involves flipping two cards at a time. 
+          If both cards are black, they go into John’s pile and if both cards are red, they go into Matt’s pile. 
+          If one card is red and one card is black, they go into a discard pile. The game is played until all 52 cards have been flipped. 
+          The person with the most cards in their pile wins. If there is a tie, John wins. If Matt has more cards than John, 
+          then John pays Matt a dollar. 
+          What is the chance of Matt getting a dollar?
+          
+ Answer: Here’s a table to explain each case.
+
+                John	  Discarded	Matt
+                13 pairs  0 pairs	13 pairs
+                12 pairs  2 pairs	12 pairs
+                11 pairs  4 pairs	11 pairs
+                10 pairs  6 pairs	10 pairs
+                9 pairs   8 pairs	9 pairs
+                8 pairs	  10 pairs	8 pairs
+                7 pairs	  12 pairs	7 pairs
+                6 pairs	  14 pairs	6 pairs
+                5 pairs	  16 pairs	5 pairs
+                4 pairs	  18 pairs	4 pairs
+                3 pairs	  20 pairs	3 pairs
+                2 pairs	  22 pairs	2 pairs
+                1 pair	  24 pairs	1 pair
+                0 pairs	  26 pairs	0 pairs
+                
+                
+           Say the deck is arranged in a way such that there are 13 black pairs. In this situation, John gets 13 black pairs.
+           And since there are no other black cards left, Matt gets 13 red pairs too. So there’s a tie and John wins.
+
+          Suppose there are 12 black pairs in the deck. In this case, there would be 2 black cards left in the deck that would pair up 
+          with 2 other red cards in the deck. These 2 black cards would never be together since we have already claimed that there are
+          only 12 black pairs in the deck. As a result, 2 pairs of cards end up in the discard pile. 
+          The remaining cards would all be red and Matt would get 12 red pairs too. So once again, there’s a tie and John wins.
+          
+          
+          So we see that in any case, there is a tie between John and Matt. So Matt never ends up with a dollar.
+          
