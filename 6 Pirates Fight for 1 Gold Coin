@@ -1,0 +1,26 @@
+Question: Six pirates discover a chest containing 1 gold coin. 
+          They decide to sit down and devise a distribution strategy. 
+          The pirates are ranked based on their experience (Pirate 1 to Pirate 6, where Pirate 6 is the most experienced). 
+          The most experienced pirate gets to propose a plan and then all the pirates vote on it. 
+          If at least half of the pirates agree on the plan, the gold is split according to the proposal. 
+          If not, the most experienced pirate is thrown off the ship and this process continues with the remaining pirates 
+          until a proposal is accepted. The first priority of the pirates is to stay alive and second to maximize the gold they get. 
+          Pirate 6 devises a plan which he knows will keep him alive. What is his plan?
+          
+Solution: If there is only one pirate, he takes the coin. If there are 2 pirates, pirate 2 takes the coin leaving pirate 1 with nothing.
+
+          If there are 3 pirates, pirate 3 needs one more vote. 
+          There is no way we can convince pirate 2 since he benefits if pirate 3 dies. 
+          Pirate 3 gives the gold coin to pirate 1 to get his vote so he survives.
+
+          If there are 4 pirates, pirate 4 needs one more vote. He can’t give it to pirate 1 since pirate 1 will get the gold coin 
+          even if pirate 4 dies. He can give it either to pirate 2 or 3 which will get him another vote to ensure his survival.
+
+          If there are 5 pirates, pirate 5 needs two more votes. There is no way he can get two more votes since 
+          there is only one gold coin to bribe with. Pirate 5 dies regardless of his proposal.
+
+          If there are 6 pirates, pirate 6 needs two more votes. He will surely get pirate 5’s vote since pirate 5 will die 
+          if pirate 6 dies. If pirate 6 and pirate 5 die, pirate 4 will survive but will not get the gold coin. 
+          Pirate 6 can bribe pirate 4 with the gold coin and get his vote. That makes a total of 3 votes allowing pirate 6 to survive. 
+          He can also give the gold coin to pirate 1, 2 or 3 although giving it to pirate 2 or 3 is a little confusing 
+          since either of them could get the gold coin in the case of 4 pirates.
