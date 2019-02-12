@@ -1,0 +1,26 @@
+Question: Five pirates discover a chest containing 100 gold coins. 
+          They decide to sit down and devise a distribution strategy. 
+          The pirates are ranked based on their experience (Pirate 1 to Pirate 5, where Pirate 5 is the most experienced). 
+          The most experienced pirate gets to propose a plan and then all the pirates vote on it. 
+          If at least half of the pirates agree on the plan, the gold is split according to the proposal. 
+          If not, the most experienced pirate is thrown off the ship and this process continues with the remaining pirates until 
+          a proposal is accepted. The first priority of the pirates is to stay alive and second to maximize the gold they get. 
+          Pirate 5 devises a plan which he knows will be accepted for sure and will maximize his gold. What is his plan?
+          
+Answer: To understand the answer, we need to reduce this problem to only 2 pirates. 
+        So what happens if there are only 2 pirates. Pirate 2 can easily propose that he gets all the 100 gold coins. 
+        Since he constitutes 50% of the pirates, the proposal has to be accepted leaving Pirate 1 with nothing.
+
+        Now let’s look at 3 pirates situation, Pirate 3 knows that if his proposal does not get accepted, 
+        then pirate 2 will get all the gold and pirate 1 will get nothing. So he decides to bribe pirate 1 with one gold coin. 
+        Pirate 1 knows that one gold coin is better than nothing so he has to back pirate 3. 
+        Pirate 3 proposes {pirate 1, pirate 2, pirate 3} {1, 0, 99}. Since pirate 1 and 3 will vote for it, it will be accepted.
+
+        If there are 4 pirates, pirate 4 needs to get one more pirate to vote for his proposal.
+        Pirate 4 realizes that if he dies, pirate 2 will get nothing (according to the proposal with 3 pirates) so he can easily 
+        bribe pirate 2 with one gold coin to get his vote. So the distribution will be {0, 1, 0, 99}.
+        
+        
+        Quick Tip from observation: If most experienced pirate is numbered odd then he keeps all odd numbered pirates in his team 
+        by bribing 1 gold each, and vice versa for even case.
+        i.e. If total number of pirates is odd then bribe all odd numbered pirates with 1 gold else bribe all even numbered pirates.
