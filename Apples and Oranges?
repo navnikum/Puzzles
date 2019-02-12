@@ -1,0 +1,12 @@
+Question: You have 3 baskets, one with apples, one with oranges and one with both apples and oranges mixed. 
+          Each basket is closed and is labeled with ‘Apples’, ‘Oranges’ and ‘Apples and Oranges’. 
+          However, each of these labels is always placed incorrectly. 
+          How would you pick only one fruit from a basket to place the labels correctly on all the baskets?
+          
+Answer: Say you pick a fruit from the basket labeled ‘Apples and Oranges’.
+        If this fruit is an apple, then we know that since the label is incorrect, this basket only contains apples. 
+        Now that we’ve determined that the basket marked as ‘Apples and Oranges’ only contains apples, we can figure out 
+        what the other baskets contain. If we look at the basket labeled as ‘Oranges’, we know that since the label is incorrect, 
+        this basket either has only apples in it or has both apples and oranges. Since we’ve already established that the basket 
+        labeled ‘Apples and Oranges’ contains only apples, we know that the basket labeled as ‘Oranges’ contains both apples and oranges. 
+        Then by simple process of elimination, we know that the basket labeled as ‘Apples’ contains only oranges.
