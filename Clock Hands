@@ -1,0 +1,17 @@
+Question: How many times a day do the minute and hour hands of a clock overlap?
+
+Answer:  The hands of a clock overlap 22 times a day. Thus the hands of the clock overlap 
+         at 12:00, ~1:05, ~2:10, ~3:15, ~4:20, ~5:25, ~6:30, ~7:35, ~8:40, ~9:45, ~10:50. Note that there is no ~11:55. 
+         This becomes 12:00.
+         
+         In T hours, the minute hand completes T laps. In the same amount of time, the hour hand completes T/12 laps.
+         The first time the minute and hour hands overlap, the minute hand would have completed 1 lap more than the hour hand. 
+         So we have T = T/12 + 1. This implies that the first overlap happens after T = 12/11 hours (~1:05 am). 
+         Similarly, the second time they overlap, the minute hand would have completed two more laps than the hour hand.
+         So for N overlaps, we have T = T/12 + N.
+         
+         Since we have 24 hours in a day, we can solve the above equation for N
+
+                                        24 = 24/12 + N
+                                        24 = 2 + N
+                                        N = 22
