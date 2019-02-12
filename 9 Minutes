@@ -1,0 +1,16 @@
+
+Question: You are given two hourglasses. One measures 4 minutes and one measures 7 minutes. How would you measure exactly 9 minutes?
+
+
+Answer: This question is similar to 4 Quarts of Water. With water, we were able to fill and pour out the pail multiple times. 
+        We can use the same logic and easily come up solutions which start measuring 9 minutes somewhere in the middle of the 
+        procedure but those will not be ideal. If possible, we want to measure the 9 minutes right from the start.
+
+
+        Step	     Time	    4 minute timer	             7 minute timer
+        
+        1	     0 min	    Start	                     Start
+        2    	     4 mins	    Flip	                     3 minutes left
+        3	     7 mins	    1 minute left	             Flip
+        4	     8 mins	    Stop	                     Flip (1 minute left)
+        5	     9 mins	    Stop 
