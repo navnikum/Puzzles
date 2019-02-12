@@ -1,0 +1,10 @@
+
+Question: You are standing outside a room next to three switches, all of which are off.
+          Each switch operates a different light bulb in the room. The room door is closed, so you cannot see which switch 
+          operates which bulb. You are only allowed to go into the room once. Determine which switch operates which bulb.
+          
+Answer: First, we turn the first switch on and leave the other two off. 
+        After 5 minutes, we turn the first switch off, turn the second switch on and leave the third switch off. 
+        Then we go into the room and touch one of the bulbs which is turned off. 
+        After that, it would be easy to tell that the first switch matches the warm bulb, the second switch matches the bulb 
+        thats turned on and the third switch matches the colder bulb.
