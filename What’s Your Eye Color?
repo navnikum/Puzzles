@@ -1,0 +1,22 @@
+Question: On a certain island there are people with assorted eye colors. 
+          There are 100 people with blue eyes and 100 people with brown eyes. Since there are no mirrors on this island, 
+          no person knows the color of their own eyes. The people on the island are not allowed to talk or communicate 
+          with each other in any way. They are also NOT aware of the number of blue or brown eyed people on the island. 
+          For all they know, they could have red eyes too. But they are allowed to observe other people and keep count 
+          of the number of people with a certain eye color. There is a rule that the people on the island have to follow 
+          – any person who is sure of their eye color has to leave the island immediately.
+
+          One day, an outsider comes to the island and announces to the people that he sees someone with blue eyes. 
+          What do you think happens?
+          
+Answer: Let’s solve the trivial case. 
+        If there was only one blue-eyed person on the island, then that person would look around and see that 
+        there is no other blue-eyed person. So he realizes that he is the only person with blue eyes on the island and 
+        leaves the day of the announcement.
+
+        If there are 2 blue-eyed people, then they look at each other. Each one expects the other to leave 
+        on the day of the announcement. However, when they realize that neither of them left of the island, 
+        they would be able to deduce that both of them have blue eyes. They both leave the island on the second day.
+
+        Through induction, this logic can be applied to the 100 blue-eyed people on the island. So on the 100th day, 
+        all the 100 blue-eyed people leave the island.
