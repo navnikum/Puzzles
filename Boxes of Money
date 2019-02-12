@@ -1,0 +1,23 @@
+Question: You are given b boxes and n dollar bills. The money has to be sealed in the b boxes in a way such that without 
+          thereafter opening a box, you can give someone a requested whole amount of dollars from 0 to n. 
+          How should b be related to n for this to happen?
+          
+Answer: Stumped? Let’s think of an example to approach this problem.
+
+        Say we have $100. A good approach to distributing $100 would be the binary number system. 
+        So you’d have $1, $2, $4, $8, $16, $32 in the first six boxes. We can’t fill the next box with $64 dollars 
+        because we are only left with $37 dollars (from a total of $100). So we’d have to put $37 in the seventh box. 
+        To supply any requested amount, we’d have to use a combination of these boxes.
+
+        To find out the restrictions on the values of b and n, we have to think of different scenarios. 
+        For instance, with a million dollars and just one box, we would never be able to dispense any requested amount 
+        less than a million. However, if we are ever in a situation with more boxes than dollars, there is a never a problem.
+
+        Using this approach, we can create a table showing the best relationship between b and n
+
+        b = 1     n = up to $1
+        b = 2     n = up to $2 + $1 = $3
+        b = 3     n = up to $4 + $2 + $1 = $7
+        b = 4     n = up to $8 + $4 + $2 + $1 = $15
+
+        See a pattern yet? So the best way we would be able to dispense any requested amount is to have n <= 2^b – 1.
