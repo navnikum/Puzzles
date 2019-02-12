@@ -1,0 +1,23 @@
+
+Question: A duck that is being chased by a fox saves itself by sitting at the center of circular pond of radius r. 
+          The duck can fly from land but cannot fly from the water. Furthermore, the fox cannot swim. 
+          The fox is four times faster than the duck. Assuming that the duck and fox are perfectly smart, is it possible
+          for the duck to ever reach the edge of the pond and fly away to its escape from the ground?
+          
+Answer: The duck could swim in concentric circles, so that the fox has to continuously run along the circumference of the pond 
+        to stay on the same radius as the duck. If the duck swims near the edge of the pond, the fox could easily keep up 
+        since they would be covering approximately the same distance and the fox is four times faster. 
+        But what if the duck swam closer to the center of the pond? The duck would have to cover a smaller circumference, 
+        and could use this strategy to put some distance between the fox and itself. 
+        At a distance of r/4 from the center of the pond, the circumference of the pond is exactly four times the 
+        circumference of the duck’s path. Thus, to stay on the same radius as the duck, the fox would barely keep up.
+
+        Say, the duck circles the pond at a distance r/4 – e, where e is an infinitesimal amount. 
+        So as the duck continues to swim along this radius, it would slowly gain some distance over the fox. 
+        Once the duck is able to gain 180 degrees over the fox, the duck would have to cover a distance of 
+        3r/4 + e to reach the edge of the pond. In the meanwhile, the fox would have to cover half the circumference of
+        the pond (i.e the 180 degrees). At that point,
+
+                  (pi * r ) > 4 * (3r/4 + e)
+
+        The duck would be able to make it to land and fly away.
