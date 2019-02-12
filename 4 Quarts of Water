@@ -1,0 +1,12 @@
+Question: If you had an infinite supply of water and a 5 quart and 3 quart pails, how would you measure exactly 4 quarts? 
+          and What is the least number of steps you need?
+          
+Answer: This question is very simple actually.
+        Since we can’t hold 4 quarts in the 3 quart pail, we have to look to filling up the 5 quart pail with exactly 4 quarts.
+        here comes a little more mathematical solution.
+
+Now the general steps are to fill up the 3 quart pail and keep transferring to the 5 quart pail (empty if full) until we hit 4 quarts. 
+Therefore, the total amount of water we filled in the 3 quart pail must be equal to 4 more than a multiple of 5
+From this, we can derive this formula.
+
+5n + 4 = 3m
