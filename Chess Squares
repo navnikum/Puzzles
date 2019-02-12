@@ -1,0 +1,22 @@
+Question: How many squares are on a chess board?
+
+Answer: If you thought the answer was 64, think again! How about all the squares that are formed by combining smaller squares on the chess board (2×2, 3×3, 4×4 squares and so on)?
+
+        A 1×1 square can be placed on the chess board in 8 horizontal and 8 vertical positions, thus making a total of 8 x 8 = 64 squares. 
+        Let’s consider a 2×2 square. 
+        There are 7 horizontal positions and 7 vertical positions in which a 2×2 square can be placed. Why? 
+        Because picking 2 adjacent squares from a total of 8 squares on a side can only be done in 7 ways. 
+        So we have 7 x 7 = 49 2×2 squares. Similarly, for the 3×3 squares, we have 6 x 6 = 36 possible squares. 
+        So here’s a break down.
+
+
+        1×1     8 x 8 = 64 squares
+        2×2     7 x 7 =  49 squares
+        3×3     6 x 6 = 36 squares
+        4×4     5 x 5 = 25 squares
+        5×5     4 x 4 = 16 squares
+        6×6     3 x 3 = 9 squares
+        7×7     2 x 2 = 4 squares
+        8×8     1×1 = 1 square
+
+        Total = 64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204 squares
